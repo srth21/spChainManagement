@@ -12,6 +12,7 @@ class App extends Component{
     return (
       /*<Router>
        <Switch>
+        <Route exact path="/" component={Home} />
         <Route exact path="/homepage.js" component={Home} />
         <Route exact path="/loginpage" component={Login} />
         <Route exact path="/usrlogin" component={ULogin} />
