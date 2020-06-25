@@ -1,0 +1,63 @@
+header{
+	background: #35424a;
+	min-height: 100px;
+	max-height: 150%;
+	border-bottom: #e8491d 3px solid;
+}
+header .container1 #branding h1 {
+color: white;
+font-size: 70px;
+margin:auto;
+float:left;
+padding-bottom: 10px;
+padding-top: 0%;
+}
+
+header a{
+	color:#ffffff;
+	text-decoration: none;
+	text-transform: uppercase;
+    font-size: 26px;
+    padding-right: 40px;
+}
+header ul{
+	margin:0;
+    float: right;
+}
+header li{
+	display:inline;
+    
+    padding-left: 50px;
+}
+header nav {
+	float:right;
+	margin-top: 15px;
+    margin-right:0;
+}
+header a:hover{
+	color:#cccccc;
+	font-weight: bold;
+}
+
+footer{
+    min-height: 40px;
+	padding:1px;
+	margin-top: 281px;
+	color:#ffffff;
+	background-color:#35424a;
+	text-align: right;
+	border-top: #e8491d 3px solid;
+}
+footer h5{
+	font-size: 20px;
+}
+@media(max-width:508px){
+    header .container #branding h1, 
+    header nav, 
+    header nav li,
+    header #branding {
+        float:none;
+        text-align: center;
+        width:100%;
+    }       
+}

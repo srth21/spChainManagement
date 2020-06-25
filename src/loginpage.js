@@ -3,15 +3,20 @@ import {Container, Col, Form, Fade,
     FormGroup, Label, Input,
     Button} from 'reactstrap';
 import _ from 'lodash';
+import Footer from "./footer";
+import './app.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Header from './header';
 
-export default class Login extends Component {
+class Login extends Component {
  
     render() {
         return (
-            <Container className="App">
+          
+          <Container className="App">
+           <Header></Header>
             <h2>Register</h2>
-            <Form className="form">
+            <Form className="form" type='POST'>
             <Col>
                 <FormGroup>
                     <Label> Enterprise Name </Label>
@@ -130,7 +135,9 @@ export default class Login extends Component {
               </Col>
               <Button>Submit</Button>
             </Form>
+          <Footer />
           </Container>
+          
         );
     }
 }
@@ -140,3 +147,5 @@ const FromValidationError = props => (
        { props.field ?  Object.values(props.field).shift() : '' } 
   </Fade>
 );
+
+export default Login;
