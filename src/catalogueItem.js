@@ -5,6 +5,7 @@ import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 import ButtonBase from '@material-ui/core/ButtonBase';
 import { black } from 'material-ui/styles/colors';
+import QuotePopup from './quotePopup';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -39,8 +40,8 @@ export default function CatalogueItem(item) {
               <img className={classes.img} alt="complex" src="download.jpg" />
             </ButtonBase>
           </Grid>
-          <Grid item xs={12} sm container>
-            <Grid item xs container direction="column" spacing={2}>
+          <Grid item xs={4} sm container>
+            <Grid item xs container direction="column" spacing={0}>
               <Grid item xs>
                 <Typography gutterBottom variant="subtitle1">
                   {item.item.Name}
@@ -54,7 +55,7 @@ export default function CatalogueItem(item) {
               </Grid>
               <Grid item>
                 <Typography variant="body2" style={{ cursor: 'pointer' }}>
-                  Contact Vendor
+                  <QuotePopup></QuotePopup>
                 </Typography>
               </Grid>
             </Grid>
