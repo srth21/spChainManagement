@@ -1,15 +1,18 @@
 import React, {Component} from 'react';
 import {Container, Col, Form, Fade,
-    FormGroup, Label, Input,
-    Button} from 'reactstrap';
+    FormGroup, Label, Input} from 'reactstrap';
+import { Button } from  'react-bootstrap';
 import _ from 'lodash';
 import Footer from "./footer";
 import './app.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './header';
-
+import history from './history';
 class Login extends Component {
- 
+       navigatorfunc() {
+         history.push("/usrlogin");
+          window.location.reload(false);
+      }
     render() {
         return (
           
@@ -133,7 +136,7 @@ class Login extends Component {
 
                 </FormGroup>
               </Col>
-              <Button>Submit</Button>
+              <Button className ="btn btn-success" onClick={this.navigatorfunc}>submit</Button>
             </Form>
           <Footer />
           </Container>

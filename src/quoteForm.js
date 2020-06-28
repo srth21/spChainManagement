@@ -3,7 +3,7 @@ import {Container, Col, Form, Fade,
     FormGroup, Label, Input,
     Button} from 'reactstrap';
 import _ from 'lodash';
-import Footer from "./footer";
+import Footercat from "./footerforcatalogue";
 import './app.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './header';
@@ -51,7 +51,6 @@ class QuoteForm extends Component {
               </Col>
               <Button>Submit</Button>
             </Form>
-          <Footer />
           </Container>
           
         );
