@@ -1,10 +1,18 @@
 import React, {Component} from 'react';
 import { Container } from 'reactstrap';
 import { Col, Form, Fade,
-    FormGroup, Label, Input,
-    Button} from 'reactstrap';
+    FormGroup, Label, Input
+  } from 'reactstrap';
+import { Button } from "react-bootstrap";
+import history from './history';
 import './userbody.css';
 class UBody extends Component {
+  
+      navigatorfunc(){
+        history.push("/loadcataloguepage");
+         window.location.reload(false);
+     }
+    
     render(){
         return(
             <Container className="body">
@@ -32,7 +40,7 @@ class UBody extends Component {
                   />
                 </FormGroup>
               </Col>
-              <Button>Submit</Button>
+              <Button className ="btn btn-success" onClick={this.navigatorfunc}>submit</Button>
             </Form>
             </Container>
         );

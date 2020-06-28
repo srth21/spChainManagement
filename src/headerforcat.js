@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import { Route, Link } from 'react-router-dom';
-
-class Header extends Component {
+import './app.css';
+class Headercat extends Component {
     render() {
         return (
             <header>
@@ -11,9 +11,8 @@ class Header extends Component {
                     </div>
                     <nav>
             	        <ul>
-                            <li><Link to="/homepage.js">Home</Link></li>
-            		        <li><Link to="/loginpage">Register</Link></li>
-            		        <li><Link to="/usrlogin">Log in </Link></li>
+                            
+                            
             	        </ul>
                     </nav>
                 </div>
@@ -21,4 +20,4 @@ class Header extends Component {
         );
     }
 }
-export default Header;
+export default Headercat;
