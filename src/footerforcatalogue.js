@@ -3,7 +3,7 @@ import './footercat.css';
 class Footercat extends Component {
     render() {
         return (
-            <footer> 
+            <footer className="footcat"> 
     	        <h5>Enterprise Hub Copyright &copy; 2020</h5>
             </footer>
         )

@@ -11,13 +11,15 @@ class Headercat extends Component {
                     </div>
                     <nav>
             	        <ul>
-                            
-                            
+                            <li><Link to="/loadcataloguepage">My Account</Link></li>
+            		        <li><Link to="/cataloguePage">Check Products</Link></li>
+                            <li><Link to="/homepage">Log out</Link></li>
+            		        
             	        </ul>
                     </nav>
                 </div>
             </header>
-        );
+        );s
     }
 }
 export default Headercat;

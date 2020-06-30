@@ -10,7 +10,7 @@ class UBody extends Component {
   
       navigatorfunc(){
         history.push("/loadcataloguepage");
-         window.location.reload(false);
+        window.location.reload(false);
      }
     
     render(){

@@ -49,6 +49,17 @@ class QuoteForm extends Component {
                     />
                 </FormGroup>
               </Col>
+              <Col>
+                <FormGroup>
+                    <Label> Attach FIle </Label>
+                    <Input
+                        type="file"
+                        name="file"
+                        id="file"
+                        placeholder = "upload your attachment"
+                    />
+                </FormGroup>
+              </Col>
               <Button>Submit</Button>
             </Form>
           </Container>
