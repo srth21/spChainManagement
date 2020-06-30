@@ -4,9 +4,9 @@ import CataloguePage from './cataloguePage';
 import Myacc from './myacc';
 import ULogin from './usrlogin';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-
+import { render } from '@testing-library/react';
 import history from './history';
-export default class Loadcatalogue extends Component{
+ class Loadcatalogue extends Component {
          render() {
                 return(
                         <Router history={history}>
@@ -16,11 +16,10 @@ export default class Loadcatalogue extends Component{
                                 <Route exact path="/usrlogin" component={ULogin} />
                         </Switch>
                         </Router>
+                        
                   
 
                 );
         }   
 }
-  
-
-  
+export default Loadcatalogue;
