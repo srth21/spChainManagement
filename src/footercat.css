@@ -1,0 +1,12 @@
+footer{
+    min-height: 40px;
+    padding:1px;
+    margin-top: 281px;
+	color:#ffffff;
+	background-color:#35424a;
+	text-align: right;
+	border-top: #e8491d 3px solid;
+}
+footer h5{
+	font-size: 20px;
+}
