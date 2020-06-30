@@ -19,7 +19,7 @@ class Headercat extends Component {
                     </nav>
                 </div>
             </header>
-        );s
+        );
     }
 }
 export default Headercat;
